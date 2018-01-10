@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NewtonCalculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="Kilograms to Newtons" Height="304" Width="488.5" Icon="scale.png" Background="#FF90C9F1" ResizeMode="NoResize" BorderBrush="#FF193483" BorderThickness="3">
+	<Grid>
+		<TextBox x:Name="WeightCalcTextbox" HorizontalAlignment="Left" Height="28" Margin="212,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" BorderThickness="2" BorderBrush="#FF193483" IsReadOnly="True" HorizontalContentAlignment="Center" FontWeight="ExtraBlack" Foreground="#FF193483" VerticalContentAlignment="Center" ToolTip="This will show the weight in newtons"/>
+		<Button x:Name="ConvertButton" Content="Convert" HorizontalAlignment="Left" Margin="58,220,0,0" VerticalAlignment="Top" Width="105" BorderThickness="2" Click="ConvertButton_Click" IsEnabled="False" FontWeight="ExtraBlack" Background="#FF193483" Foreground="White" FontSize="16" Cursor="Hand"/>
+		<Image HorizontalAlignment="Left" Height="136" VerticalAlignment="Top" Width="142" Source="scale.png" Margin="36,0,0,0" Opacity="0.35"/>
+		<Button x:Name="ClearButton" Content="Clear" HorizontalAlignment="Left" Margin="212,220,0,0" VerticalAlignment="Top" Width="216" BorderThickness="2" Click="ClearButton_Click" IsEnabled="False" RenderTransformOrigin="-0.107,0.364" FontWeight="ExtraBlack" Background="#FF193483" Foreground="White" FontSize="16" Cursor="Hand"/>
+		<Label Content="Kilograms" HorizontalAlignment="Left" Margin="58,161,0,0" VerticalAlignment="Top" Width="105" HorizontalContentAlignment="Center" FontWeight="ExtraBlack" FontSize="16"/>
+		<Label Content="Newtons" HorizontalAlignment="Left" Margin="212,161,0,0" VerticalAlignment="Top" Width="216" HorizontalContentAlignment="Center" FontWeight="ExtraBlack" FontSize="16"/>
+		<Label Content="kg" HorizontalAlignment="Left" Margin="41,29,0,0" VerticalAlignment="Top" FontSize="30" FontWeight="ExtraBlack" BorderThickness="0" BorderBrush="#FF000035"/>
+		<TextBox x:Name="test_mass_textbox" HorizontalAlignment="Left" Height="28" Margin="58,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="105" PreviewTextInput="test_mass_textbox_previewtextinput" BorderBrush="#FF193483" BorderThickness="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FF193483" FontWeight="ExtraBlack"/>
+		<Label Content="N" HorizontalAlignment="Left" Margin="129,77,0,0" VerticalAlignment="Top" FontSize="30" FontWeight="ExtraBlack" BorderThickness="0" BorderBrush="#FF000035"/>
+		<Label Content="To" HorizontalAlignment="Left" Margin="88,71,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="ExtraBlack" BorderThickness="0" BorderBrush="#FF000035"/>
+		<TextBlock HorizontalAlignment="Left" Margin="212,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" FontWeight="ExtraBlack" Width="216" FontSize="14"><Run Text="This program allows "/><Run Text="you"/><Run Text=" to type in the mass in kilograms, and returns the weight in newtons."/></TextBlock>
+
+	</Grid>
 </Window>
